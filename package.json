@@ -1,0 +1,25 @@
+{
+  "name": "var-type"
+, "author": "Beau Sorensen <mail@beausorensen.com> (http://github.com/sorensen)"
+, "version": "0.0.1"
+, "license": "MIT"
+, "keywords": [
+    "type"
+  ]
+, "description": "Get the variable type"
+, "repository": {
+    "type": "git"
+  , "url": "git://github.com/sorensen/var-type.js.git"
+  }
+, "engines": {
+    "node": "0.x"
+  }
+, "main": "index.js"
+, "scripts": {
+    "test": "npm run hint && ./node_modules/mocha/bin/mocha -R spec test.js"
+  , "hint": "jshint index.js *.json"
+  }
+, "devDependencies": {
+    "mocha": "^2.1.0"
+  }
+}
