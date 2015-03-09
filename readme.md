@@ -24,7 +24,14 @@ console.log(varType('hello')) // String
 
 // The 2nd argument will be used as a comparison test if sent
 varType('foo', 'String') // true
+
+// All additional arguments are flattened and used for comparison tests
+varType(1, ['Number', 'String', 'Boolean']) // true
+varType('hi', 'Function', 'Number') // false
 ```
+
+Conversion Table
+----------------
 
 | Input                  | Output    |
 | ---------------------- |:---------:|

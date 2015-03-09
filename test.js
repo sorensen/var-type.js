@@ -1,14 +1,15 @@
 'use strict';
 
-var type = require('./index')
-  , assert = require('assert')
+var assert = require('assert')
   , ase = assert.strictEqual
  
 describe('var-type', function() {
+  var varType = require('./index')
 
   function test(exp, list) {
     list.forEach(function(x) {
-      ase(type(x), exp)
+      ase(varType(x), exp)
+      assert(varType(x, exp))
     })
   }
 
@@ -95,5 +96,12 @@ describe('var-type', function() {
       new Error()
     , err
     ])
+  })
+
+  it('Mixed', function() {
+    assert(varType('foo', 'String', 'Number'))
+    assert(varType('asdf', ['String', 'Number']))
+    assert(varType(1, ['String'], ['Number']))
+    assert(varType(function(){}, 'Boolean', 'Array', 'Function'))
   })
 })

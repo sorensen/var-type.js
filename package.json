@@ -1,7 +1,7 @@
 {
   "name": "var-type"
 , "author": "Beau Sorensen <mail@beausorensen.com> (http://github.com/sorensen)"
-, "version": "0.0.3"
+, "version": "0.0.4"
 , "license": "MIT"
 , "keywords": [
     "type"
