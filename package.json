@@ -1,25 +1,23 @@
 {
-  "name": "var-type"
-, "author": "Beau Sorensen <mail@beausorensen.com> (http://github.com/sorensen)"
-, "version": "1.0.0"
-, "license": "MIT"
-, "keywords": [
+  "name": "var-type",
+  "author": "Beau Sorensen <mail@beausorensen.com> (http://github.com/sorensen)",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
     "type"
-  ]
-, "description": "Get the variable type"
-, "repository": {
-    "type": "git"
-  , "url": "git://github.com/sorensen/var-type.js.git"
-  }
-, "engines": {
-    "node": "0.x"
-  }
-, "main": "index.js"
-, "scripts": {
-    "test": "npm run hint && ./node_modules/mocha/bin/mocha -R spec test.js"
-  , "hint": "jshint index.js *.json"
-  }
-, "devDependencies": {
-    "mocha": "^2.1.0"
+  ],
+  "description": "Get the variable type",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sorensen/var-type.js.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run hint && mocha -R spec test.js",
+    "hint": "jshint index.js *.json"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.4",
+    "mocha": "^3.2.0"
   }
 }
